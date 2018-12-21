@@ -1,0 +1,47 @@
+// ==========================================================================
+//  COMMON WIDGETS
+// ==========================================================================
+
+.rt-category-tree{
+		padding-left: 0;
+		list-style: none;
+		position: relative;
+		overflow: hidden;
+
+		.has-children{
+			padding-right: 20px;
+
+			> span{				
+				@include icon( "\2b" );
+				cursor: pointer;
+				position: absolute;
+				right: 0;
+				font-size: 0.8em;
+
+				&:hover{
+					opacity: 0.4;
+				}
+			}
+
+		}
+
+		li > ul{
+			display: none;
+		}
+
+		.current-cat-ancestor, .current-cat, .active{
+
+			> span{
+				@include icon( "\2d" );
+			}
+
+			> ul{
+				display: block;
+			}
+		}
+}
+
+.rtl .rt-category-tree .has-children > span {
+	left: 0;
+	right: auto;
+}

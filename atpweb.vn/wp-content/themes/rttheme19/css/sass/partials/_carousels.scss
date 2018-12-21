@@ -1,0 +1,101 @@
+/* ==========================================================================
+   CAROUSELS
+   ========================================================================== */
+
+	/* carousel holder */
+	.carousel-holder{
+		position: relative;
+	}
+
+	.owl-carousel{
+		overflow: hidden;
+		position: relative;
+	}
+
+	/* navigation */
+	.owl-carousel{
+		.owl-nav{
+
+			&.disabled{
+				display: none;
+			}
+			
+			div{
+				position: absolute;
+				top: 50%;
+				background: rgba(0, 0, 0, 0.3);
+				color: #fff;
+				padding: 10px;
+				margin-top: -20px;		
+				font-size: 14px;
+				cursor: pointer;
+
+				&.disabled{
+					opacity: 0.3;
+				}
+			}
+
+			.owl-next{
+				right: -40px;
+			}
+
+			.owl-prev{
+				left: -40px;
+			}	
+		}
+	}
+
+	/* hover state */
+	.owl-carousel:hover{
+		.owl-nav{
+
+			div{
+				@include transition( all 0.1s ease 0s );
+			}
+
+			.owl-next{
+				right: 0;
+			}
+
+			.owl-prev{
+				left: 0;
+			}	
+		}
+	}
+
+	/* dots */
+	.dots-holder{
+		position: absolute;
+		right: -17px;
+		top: 0;
+
+		> div{	
+			zoom: 1;
+		}
+
+		> div span{
+			cursor: pointer;
+			display: block;
+			width: 10px;
+			height: 10px;
+			margin: 0 0 4px 0 !important;
+			display: block;
+			-webkit-backface-visibility: visible; 
+			//use color border-color-as-background-color;
+			@include transition( opacity 200ms ease );		
+		}
+
+		div.active span, div:hover span {
+			//use color primary-color-as-background-color;
+		}	
+	}
+
+
+	.rt-image-carousel{
+
+		.owl-carousel .owl-item img{
+			width: auto;
+			margin: auto;
+			transform-style: initial;
+		}
+	}

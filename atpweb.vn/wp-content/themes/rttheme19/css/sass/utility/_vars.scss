@@ -1,0 +1,27 @@
+//global vars
+$body-background-color: #d8dcde;
+$primary-font: Helvetica, sans-serif;
+$primary-font-color: #666;
+$side-font-color: #fffddd;
+
+//
+// RESPONSIVE VALUES
+//
+
+//Extra small devices Phones (<768px)
+$rt-xs: "screen and (max-width : 767px)";
+
+//Small devices Tablets (≥768px) 	
+$rt-sm: "screen and (min-width : 768px)";
+
+//Medium devices Desktops (≥992px) 	
+$rt-md: "screen and (min-width : 992px)";
+
+//Large devices Desktops (≥1200px)
+$rt-lg: "screen and (min-width : 1199px)";
+
+//Tablet Portrait and Smaller ( < 980px)
+$rt-mobile-all: "screen and (max-width : 979px)";
+
+//Tablet Landscape and Bigger ( ≥980px)
+$rt-big-all: "(min-width : 980px)"; 

@@ -1,0 +1,206 @@
+/* ==========================================================================
+   SOCIAL MEDIA ICONS
+   ========================================================================== */
+
+	/* social media holder */
+	ul.social_media{
+		margin: 0;
+		padding: 0;		
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		overflow: visible !important;
+	}
+
+	ul.social_media li{
+		float: left;
+		width: 24px;
+		height: 24px;
+		margin: 0 4px 4px 0;
+		border: 0;
+	}
+
+	/* first & last items */
+	.social_media li:first-child,#top_bar .social_media li:first-child{
+		margin-left: 0;
+	}
+
+	.social_media li:last-child,#top_bar .social_media li:last-child{
+		margin-right: 0;
+	} 
+
+	/* item link */
+	ul.social_media > li > a{ 
+		display: block; 
+		width: 24px;
+		height: 24px;		
+		line-height: 24px;
+		text-align: center;
+		color: #fff;
+		text-decoration: none !important; 
+		-webkit-transition: all .2s;
+		-moz-transition: all .2s;
+		-o-transition: all .2s;
+		transition: all .2s; 				
+	}
+
+	/* hover position */
+	ul.social_media > li > a:hover{ 
+		color: #fff;
+		height: 29px;
+		margin-top: -5px;
+		text-decoration: none !important;
+	} 
+
+	/* item desc */
+	.social_media li span{
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";  
+		visibility: none;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		text-align: center;
+		font-size: 11px;
+		line-height: 140%;
+		text-decoration: none;
+		top: -45px;
+		padding: 4px 0px;
+		cursor: default;	 
+		position: absolute;
+		text-indent: 0; 
+		color: #fff; 
+		z-index: -999;	 
+		-webkit-transition: top .2s;
+		-moz-transition: top .2s;
+		-o-transition: top .2s;
+		transition: top .2s; 	
+		font-family: arial;
+	}
+
+	/* item desc hover position */
+	.social_media li:hover span{
+		top: -28px;
+		opacity: 1; 
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";  
+		visibility: visible;
+		z-index: 999;   
+		min-width: 70px;
+	}  
+
+	.social_media [class^="icon-"]:before, .social_media [class*=" icon-"]:before {
+		margin-left: 1.5px;
+		line-height: 24px;
+	}
+
+	/* social media colors */
+	.social_media li:hover a,.social_media li:hover span{background-color: #bbb;} /*unbranded*/
+	.social_media li.facebook:hover a,.social_media li.facebook:hover span{background-color: #3B5998 !important;} 
+	.social_media li.twitter:hover a,.social_media li.twitter:hover span{background-color: #10c0ee !important;}   
+	.social_media li.gplus:hover a,.social_media li.gplus:hover span{background-color: #e3614a !important;}  
+	.social_media li.flickr:hover a,.social_media li.flickr:hover span{background-color: #ff3092 !important;} 	
+	.social_media li.mail:hover a,.social_media li.mail:hover span{background-color: #999 !important;} 	
+	.social_media li.lastfm:hover a,.social_media li.lastfm:hover span{background-color: #da260e !important;} 	
+	.social_media li.dribbble:hover a,.social_media li.dribbble:hover span{background-color: #EA4C89 !important;} 
+	.social_media li.linkedin:hover a,.social_media li.linkedin:hover span{background-color: #006e99 !important;} 	
+	.social_media li.vimeo:hover a,.social_media li.vimeo:hover span{background-color: #0ec4ef !important;} 	
+	.social_media li.youtube-play:hover a,.social_media li.youtube-play:hover span{background-color: #f3554f !important;} 	 
+	.social_media li.instagram:hover a,.social_media li.instagram:hover span{background-color: #7b6455 !important;} 	
+	.social_media li.behance:hover a,.social_media li.behance:hover span{background-color: #228cff !important;} 		
+	.social_media li.dropbox:hover a,.social_media li.dropbox:hover span{background-color: #499dd6 !important;} 	  
+	.social_media li.picasa:hover a,.social_media li.picasa:hover span{background-color: #aa7bbc !important;} 	
+	.social_media li.rss:hover a,.social_media li.rss:hover span{background-color: #fd8900 !important;} 
+	.social_media li.skype:hover a,.social_media li.skype:hover span{background-color: #00b0e1 !important;} 	 
+	.social_media li.stumbleupon:hover a,.social_media li.stumbleupon:hover span{background-color: #6cc977 !important;} 	 
+	.social_media li.pinterest:hover a,.social_media li.pinterest:hover span{background-color: #d62930 !important;}  
+	.social_media li.github:hover a,.social_media li.github:hover span{background-color: #888 !important;} 	
+	.social_media li.tumblr:hover a,.social_media li.tumblr:hover span{background-color: #456885 !important;} 	
+	.social_media li.spotify:hover a,.social_media li.spotify:hover span{background-color: #afd102 !important;} 	
+	.social_media li.evernote:hover a,.social_media li.evernote:hover span{background-color: #6fbd45 !important;} 	
+	.social_media li.flattr:hover a,.social_media li.flattr:hover span{background-color: #f7af30 !important;} 	
+	.social_media li.paypal:hover a,.social_media li.paypal:hover span{background-color: #003f70 !important;} 	
+	.social_media li.vkontakte:hover a,.social_media li.vkontakte:hover span{background-color: #2f6893 !important;} 	
+	.social_media li.soundcloud:hover a,.social_media li.soundcloud:hover span{background-color: #F76700 !important;} 	 
+	.social_media li.foursquare:hover a,.social_media li.foursquare:hover span{background-color: rgb(36,178,237) !important;}
+	.social_media li.delicious:hover a,.social_media li.delicious:hover span{background-color: rgb(51,153,255) !important;} 	 
+	.social_media li.forrst:hover a,.social_media li.forrst:hover span{background-color: rgb(90,153,103) !important;} 	  
+	.social_media li.ebay:hover a,.social_media li.ebay:hover span{background-color: rgb(221,59,74) !important;} 	 
+	.social_media li.android:hover a,.social_media li.android:hover span{background-color: rgb(128,189,1) !important;} 	   
+	.social_media li.xing:hover a,.social_media li.xing:hover span{background-color: rgb(210,214,0) !important;} 	 
+	.social_media li.reddit:hover a,.social_media li.reddit:hover span{background-color: rgb(255,69,0) !important;} 	 
+	.social_media li.digg:hover a,.social_media li.digg:hover span{background-color: rgb(0,0,0) !important;} 	 
+	.social_media li.macstore:hover a,.social_media li.macstore:hover span{background-color: rgb(27,189,251) !important;} 	 
+	.social_media li.myspace:hover a,.social_media li.myspace:hover span{background-color: rgb(9,17,164) !important;} 	 
+	.social_media li.amazon:hover a,.social_media li.amazon:hover span{background-color: rgb(245,147,24) !important;} 	 
+	.social_media li.stackoverflow:hover a,.social_media li.stackoverflow:hover span{background-color: rgb(254,122,21) !important;} 	 
+	.social_media li.slideshare:hover a,.social_media li.slideshare:hover span{background-color: #0479B6 !important;} 	 
+	.social_media li.sina-weibo:hover a,.social_media li.sina-weibo:hover span{background-color: #E6162D !important;} 	 
+	.social_media li.odnoklassniki:hover a,.social_media li.odnoklassniki:hover span{background-color: #f58221 !important;} 	 	
+	.social_media li.whatsapp:hover a,.social_media li.whatsapp:hover span{background-color: #2db742 !important;} 	 		
+	.social_media li.telegram:hover a,.social_media li.telegram:hover span{background-color: #2ea5de !important;} 	  
+
+	/* in topbar */
+	.topbar-widget, .header-widget{
+		> .social_media > li > a, > .social_media > li, > .social_media > li > a:hover, > .social_media > li:hover a{
+			width: inherit;
+			height: inherit;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding: 0;
+			background-color: transparent !important;
+		}
+
+		> .social_media li:hover span{
+			display: none !important;
+		}
+
+		.social_media > li:hover{
+			opacity: 0.8;
+		}
+	}
+
+	/* social share */
+	.social_share_holder{
+		position: relative;
+
+		.share_text{
+			position: relative;
+			display: block;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+
+		.icon-share:after {
+			//use color border-color;
+			border-style: solid;
+			border-width: 1px 0 0 0;
+			content: "";
+			margin-left: 10px;
+			position: absolute;
+			width: 100%;
+			top: 50%;
+		}	
+
+		.social_media li{
+			margin: 0 3px 4px 0;
+		}
+
+		.social_media li:last-child{
+			margin: 0;
+		}	
+	}
+
+	/* social share in single posts */
+	.post-title-holder .social_share_holder{
+		margin-top: 10px;
+		text-align: right;
+
+		.share_text{
+			display: inline-block;
+			margin: 0 10px 5px 0;
+		}
+
+		.icon-share:after {
+			content: none;
+		}			
+	}

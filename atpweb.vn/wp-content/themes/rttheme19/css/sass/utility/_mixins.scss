@@ -1,0 +1,51 @@
+//
+// RT-Theme Mixins
+//
+
+//
+//mixin for icon common values
+//
+@mixin icon( $content ){
+
+	&:before{
+		font-family: "fontello";
+		content: "#{$content}";
+		display: inline-block;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		line-height: 1em;
+		margin-right: 0.2em;
+		text-align: center;
+		text-decoration: inherit;
+		text-transform: none;
+		width: 1em;		
+	}
+
+}
+
+
+//
+//nested comments for better output
+//
+@mixin nested-comments( $comment, $style ){
+	@if ($style=="multi"){
+		@at-root {
+		/* ==========================================================================
+		   #{$comment}
+		   ========================================================================== */
+		};		
+	}
+	@elseif ($style=="multi-sub"){
+		@at-root {
+		/* #{$comment}
+		   ========================================================================== */   
+		};		
+	}	
+	@else{
+		@at-root {
+		/* #{$comment} */
+		};	
+	}
+
+}

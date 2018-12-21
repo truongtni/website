@@ -1,0 +1,978 @@
+@charset "UTF-8";
+/*!
+ * 
+ * RT-Theme 19 RTL CSS File
+ * Copyright 2014 RT-Themes
+ * http://rtthemes.com
+ * 
+ */
+/* ==========================================================================
+   GLOBAL STRUCTURE
+   ========================================================================== */
+/* Grid correction for Bootsrap & Visual Composer for fixing order of the columns on mobile phones
+   ========================================================================== */
+.rtl .col-xs-1, .rtl .col-xs-2, .rtl .col-xs-3, .rtl .col-xs-4, .rtl .col-xs-5, .rtl .col-xs-6, .rtl .col-xs-7, .rtl .col-xs-8, .rtl .col-xs-9, .rtl .col-xs-10, .rtl .col-xs-11, .rtl .col-xs-12,
+.rtl .vc_col-xs-1, .rtl .vc_col-xs-2, .rtl .vc_col-xs-3, .rtl .vc_col-xs-4, .rtl .vc_col-xs-5, .rtl .vc_col-xs-6, .rtl .vc_col-xs-7, .rtl .vc_col-xs-8, .rtl .vc_col-xs-9, .rtl .vc_col-xs-10, .rtl .vc_col-xs-11, .rtl .vc_col-xs-12 {
+  float: right;
+}
+@media (min-width: 768px) {
+  .rtl .col-sm-1, .rtl .col-sm-2, .rtl .col-sm-3, .rtl .col-sm-4, .rtl .col-sm-5, .rtl .col-sm-6, .rtl .col-sm-7, .rtl .col-sm-8, .rtl .col-sm-9, .rtl .col-sm-10, .rtl .col-sm-11, .rtl .col-sm-12,
+  .rtl .vc_col-sm-1, .rtl .vc_col-sm-2, .rtl .vc_col-sm-3, .rtl .vc_col-sm-4, .rtl .vc_col-sm-5, .rtl .vc_col-sm-6, .rtl .vc_col-sm-7, .rtl .vc_col-sm-8, .rtl .vc_col-sm-9, .rtl .vc_col-sm-10, .rtl .vc_col-sm-11, .rtl .vc_col-sm-12 {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .rtl .col-md-1, .rtl .col-md-2, .rtl .col-md-3, .rtl .col-md-4, .rtl .col-md-5, .rtl .col-md-6, .rtl .col-md-7, .rtl .col-md-8, .rtl .col-md-9, .rtl .col-md-10, .rtl .col-md-11, .rtl .col-md-12,
+  .rtl .vc_col-md-1, .rtl .vc_col-md-2, .rtl .vc_col-md-3, .rtl .vc_col-md-4, .rtl .vc_col-md-5, .rtl .vc_col-md-6, .rtl .vc_col-md-7, .rtl .vc_col-md-8, .rtl .vc_col-md-9, .rtl .vc_col-md-10, .rtl .vc_col-md-11, .rtl .vc_col-md-12 {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .rtl .col-lg-1, .rtl .col-lg-2, .rtl .col-lg-3, .rtl .col-lg-4, .rtl .col-lg-5, .rtl .col-lg-6, .rtl .col-lg-7, .rtl .col-lg-8, .rtl .col-lg-9, .rtl .col-lg-10, .rtl .col-lg-11, .rtl .col-lg-12,
+  .rtl .vc_col-lg-1, .rtl .vc_col-lg-2, .rtl .vc_col-lg-3, .rtl .vc_col-lg-4, .rtl .vc_col-lg-5, .rtl .vc_col-lg-6, .rtl .vc_col-lg-7, .rtl .vc_col-lg-8, .rtl .vc_col-lg-9, .rtl .vc_col-lg-10, .rtl .vc_col-lg-11, .rtl .vc_col-lg-12 {
+    float: right;
+  }
+}
+
+/* Bootsrap Fixes
+   ========================================================================== */
+blockquote {
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+
+th {
+  text-align: right;
+}
+
+/* Left Side
+   ========================================================================== */
+#left_side {
+  float: right;
+}
+#left_side .left-side-background-holder {
+  left: auto;
+  right: 0;
+}
+
+#side_content {
+  float: left;
+}
+
+/* mobile menu button */
+.mobile-menu-button {
+  right: 10px;
+  left: auto;
+}
+
+/* Tools */
+#tools[data-item-count="2"] > ul > li.search > span:first-child {
+  padding: 10px 20px;
+  text-align: left;
+}
+#tools[data-item-count="2"] > ul > li.languages {
+  width: 80%;
+}
+#tools[data-item-count="2"] > ul > li.languages > span:first-child {
+  text-align: right;
+}
+#tools[data-item-count="2"] > ul > li.languages:before {
+  right: auto;
+  left: 10px;
+}
+#tools > ul > li {
+  float: right;
+}
+#tools > ul > li > span:first-child {
+  border-width: 0 0 0 1px;
+}
+#tools > ul > li span > sub {
+  margin-right: 2px;
+  margin-left: auto;
+}
+
+/* Right Side
+   ========================================================================== */
+#right_side {
+  margin-right: 30%;
+  margin-left: auto;
+}
+
+/* Sidebars
+   ========================================================================== */
+.sidebar {
+  border-style: solid;
+}
+
+.sidebar.right {
+  border-width: 0 1px 0 0;
+}
+
+.sidebar.left {
+  border-width: 0 0 0 1px;
+}
+
+/* Footer
+   ========================================================================== */
+#footer.fixed_footer {
+  left: auto;
+  right: 30%;
+}
+#footer .footer_widgets {
+  padding: 40px 0;
+}
+#footer .footer_info_bar > div > div > *:first-child li {
+  padding-left: auto;
+  padding-right: 0;
+}
+#footer .copyright {
+  float: right;
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+#footer-navigation {
+  float: right;
+}
+#footer-navigation li {
+  float: right;
+  border-width: 0 1px 0 0;
+}
+
+/* ==========================================================================
+   MAIN NAVIGATION
+   ========================================================================== */
+/* Desktop Navigation
+   ========================================================================== */
+#navigation > li > a {
+  padding: 10px 20px 10px 0;
+}
+#navigation ul {
+  left: -270px;
+  right: auto;
+}
+#navigation ul li a {
+  padding: 10px 20px 10px 0;
+}
+#navigation li:hover:after {
+  right: auto;
+  left: 0;
+  border-right-width: 0;
+  border-right-style: solid;
+  border-left-width: 10px;
+  border-left-style: solid;
+}
+
+#left_side.shadow #navigation ul {
+  -webkit-box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: -4px 4px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* Mobile Navigation
+   ========================================================================== */
+.mobile-menu #navigation li.menu-item-has-children > a {
+  padding-right: 20px;
+  padding-left: 65px;
+}
+.mobile-menu #navigation li.menu-item-has-children > a:after {
+  border-width: 0 1px 0 0;
+  right: auto;
+  left: 50px;
+}
+.mobile-menu #navigation li.menu-item-has-children > a:before {
+  right: auto;
+  left: 20px;
+}
+
+/* ==========================================================================
+   DESIGN ELEMENTS
+   ========================================================================== */
+/* Grid Borders
+   ========================================================================== */
+.border_grid:not(.filterable) > .row > div:after, .border_grid:not(.filterable) .wpb_column:after, .border_grid:not(.filterable) .col:after {
+  left: auto;
+  right: -1px;
+  border-width: 0 0 0 1px;
+}
+
+/* border grid for filterable items */
+.border_grid.filterable > .row > .col:before {
+  right: 0;
+  left: 2px;
+}
+
+/* Featured Images
+   ========================================================================== */
+/* image effect */
+.imgeffect > div:before {
+  right: auto;
+  left: -50px;
+}
+.imgeffect > div:hover:before {
+  left: 0;
+  right: auto;
+}
+
+/* Custom Select Box
+   ========================================================================== */
+.hasCustomSelect {
+  z-index: 2;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.customselect {
+  padding: 4px 10px 4px 20px;
+}
+
+.customselect .customselectInner:before {
+  right: auto;
+  left: 10px;
+}
+
+/* Parallax Backgrounds
+   ========================================================================== */
+.rt-parallax-background {
+  left: auto;
+  right: 0;
+}
+
+/* Read More Links
+   ========================================================================== */
+.read_more:before {
+  margin-right: auto;
+  margin-left: 6px;
+  padding-right: 10px;
+  padding-left: 0;
+  content: "\f104";
+  text-align: right;
+}
+
+.read_more:hover:before {
+  padding-right: 13px;
+  padding-left: 0;
+}
+
+/* RevSlider Navigation
+   ========================================================================== */
+.rev_slider_wrapper .tp-leftarrow.square-old {
+  left: 10px !important;
+}
+
+/* ==========================================================================
+   PRODUCTS
+   ========================================================================== */
+.product_item_holder .product_info_footer {
+  text-align: left;
+}
+.product_item_holder .product_info_footer a:before {
+  margin-right: auto;
+  margin-left: 5px;
+  padding-right: 0;
+  text-align: right;
+}
+.product_item_holder .product_info_footer > *:first-child {
+  float: right;
+}
+.product_item_holder .product_info_footer .icon-angle-right:before {
+  content: "\f104";
+}
+
+.tax-description.with-cat-image .product-category-thumbnail {
+  margin-right: auto;
+  margin-left: 15px;
+  border-width: 0 0 0 1px;
+  padding-right: auto;
+  padding-left: 15px;
+  float: right;
+}
+
+/* ==========================================================================
+   PORTFOLIO
+   ========================================================================== */
+/* action buttons */
+.action_buttons li {
+  float: right;
+}
+
+/* filter navigation
+   ========================================================================== */
+.filter-holder {
+  text-align: left;
+}
+
+.filter_navigation li:first-child {
+  border-right-width: 0;
+  padding-right: 0;
+}
+
+.filter_navigation li {
+  border-width: 0 1px 0 0;
+  float: right;
+}
+
+.filter_navigation li span {
+  padding-left: 5px;
+  padding-right: auto;
+}
+
+/* ==========================================================================
+   BLOG
+   ========================================================================== */
+/* Article Box style
+   ========================================================================== */
+article.type-post .post_data > span {
+  margin-right: auto;
+  margin-left: 3px;
+  float: right;
+}
+article.type-post .post_data > span:before {
+  margin-left: 0.2em;
+  margin-right: 0;
+}
+article.type-post .post_data > .comment_link {
+  margin-right: 2px;
+}
+article.type-post .post_data .comment_link:before {
+  margin-left: 4px;
+  margin-right: auto;
+}
+
+/* full width blog lists */
+.blog_list > article .format-icon {
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+.post-title-holder .social_share_holder {
+  text-align: left;
+}
+
+.post-title-holder .social_share_holder .share_text {
+  margin: 0 0 5px 10px;
+}
+
+/* Author info
+   ========================================================================== */
+.author-avatar {
+  float: right;
+}
+
+.author-description {
+  margin-right: 100px;
+  margin-left: auto;
+}
+
+/* Comments
+   ========================================================================== */
+.commentlist .children:before {
+  border-width: 0 1px 0 0;
+  left: auto;
+  right: 0;
+}
+.commentlist .children .comment-holder:before {
+  right: -34px;
+  left: 0;
+}
+
+.comment-avatar {
+  float: right;
+}
+
+.comment-body {
+  margin-right: 60px;
+  margin-left: auto;
+}
+
+.comment-reply a {
+  left: 20px;
+  right: auto;
+}
+
+.comment-reply-title small > a {
+  right: auto;
+  left: 0;
+}
+
+.comment-form .comment-form-author, .comment-form .comment-form-email, .comment-form .comment-form-url {
+  float: right;
+}
+.comment-form .comment-form-author, .comment-form .comment-form-email {
+  margin-left: 2%;
+  margin-right: auto;
+}
+
+/* comments in tabs */
+.rt_tabs .comment-body, .toggle-content .comment-body {
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+/* ==========================================================================
+	SHORTCODES
+	========================================================================== */
+/* CONTENT SLIDER
+	========================================================================== */
+.slide-content-wrapper {
+  width: 100%;
+  position: relative;
+  display: block;
+  clear: both;
+}
+.slide-content-wrapper .slide-content {
+  padding: 20px;
+  margin: 0;
+  opacity: 0;
+}
+.slide-content-wrapper .slide-content.right {
+  float: right;
+}
+.slide-content-wrapper .slide-content.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-content-wrapper.default {
+  max-width: 980px;
+}
+
+.slide-content-wrapper.fullwidth {
+  max-width: 100%;
+}
+
+.active .slide-content-wrapper .slide-content {
+  -webkit-animation-name: active_slide;
+  animation-name: active_slide;
+}
+
+/* ICON LISTS
+	========================================================================== */
+.with_icons > div > .icon {
+  float: right;
+}
+.with_icons > div > div {
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+/* icon list - style 1 */
+.with_icons.style-1 > div > .icon {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+/* icon list - style 2 */
+.with_icons.style-2 > div > .icon {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+/* icon list - style 3 */
+.with_icons.style-3 > div > .icon {
+  margin-left: auto;
+  margin-right: 5px;
+}
+.with_icons.style-3 > div > div {
+  margin-left: auto;
+  margin-right: 35px;
+}
+
+/* CHAINED CONTENTS
+	========================================================================== */
+/* left aligned chain */
+.chained_contents.style-1.left > div > div {
+  text-align: left;
+}
+
+/* DIVIDERS
+	========================================================================== */
+/* style 1 */
+.rt_divider.style-1:before {
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+/* style 3 */
+.rt_divider.style-3:after {
+  left: auto;
+  right: 0;
+}
+
+/* PRICING TABLES
+	========================================================================== */
+/* compare table style */
+.pricing_table.compare .table_wrap.features > ul {
+  border-right-width: 1px;
+  border-left-width: 0;
+  -webkit-box-shadow: 6px 0 9px rgba(11, 11, 11, 0.04) inset;
+  box-shadow: 6px 0 9px rgba(11, 11, 11, 0.04) inset;
+}
+
+/* BUTTONS
+	========================================================================== */
+.button_ > span {
+  margin-right: auto;
+  margin-left: 10px;
+}
+.button_:hover:after {
+  left: auto;
+  right: 0;
+}
+
+/*input buttons with icons*/
+button.button_.with_icon:before {
+  margin-left: 10px;
+  margin-right: 0;
+}
+
+/*small buttons*/
+.button_.small > span {
+  margin-right: auto;
+  margin-left: 6px;
+}
+
+/*medium buttons*/
+.button_.medium > span {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+/*big buttons*/
+.button_.big > span {
+  margin-right: auto;
+  margin-left: 12px;
+}
+
+/* BANNERS
+	========================================================================== */
+.banner > .button_holder {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.withbutton > .featured_text {
+  padding-left: 20px;
+  padding-right: 0;
+  border-width: 0 0 0 1px;
+}
+
+/* TOGGLES ( ACCORDIONS )
+	========================================================================== */
+.rt-toggle > ol > li .toggle-number, .rt-toggle > ol > li.open .toggle-number {
+  left: auto;
+  right: 0;
+}
+.rt-toggle > ol > li .toggle-title {
+  margin: 0 40px 0 30px;
+}
+.rt-toggle.no-numbers ol li .toggle-title {
+  margin: 0 0 0 30px;
+}
+.rt-toggle .toggle-head:after {
+  left: 0;
+  right: auto;
+}
+
+/* TABS
+	========================================================================== */
+/* global */
+/* style 1 */
+.rt_tabs.tab-style-1 .tab_nav > li {
+  border-width: 0 0 0 1px;
+}
+.rt_tabs.tab-style-1 .tab_nav > li > span:before,
+.rt_tabs.tab-style-1 .tab_content_wrapper > .tab_title > span:before {
+  margin-left: 5px;
+  margin-right: auto;
+}
+
+/* style 2 */
+.rt_tabs.tab-style-2 .tab_nav > li > span:before,
+.rt_tabs.tab-style-2 .tab_content_wrapper > .tab_title > span:before {
+  margin-right: auto;
+  margin-left: 5px;
+}
+
+/* HEADING SHORTCODE
+	========================================================================== */
+/* style 1,2 */
+.rt_heading.style-1:after {
+  right: 0;
+  left: auto;
+}
+
+/* style 2 */
+.rt_heading_wrapper.style-2 {
+  text-align: right;
+}
+.rt_heading_wrapper.style-2 > .style-2:after {
+  left: -1034px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rt_heading_wrapper.style-2 > .style-2:before {
+  left: auto;
+  margin-left: auto;
+  margin-right: 22px;
+  right: 100%;
+  content: "\f105";
+}
+
+/* style 5 */
+.rt_heading_wrapper.style-5 {
+  text-align: right;
+}
+.rt_heading_wrapper.style-5 > .style-5:after {
+  left: auto;
+  right: 0;
+}
+
+/* style 6 */
+.rt_heading_wrapper.style-6 {
+  text-align: right;
+}
+.rt_heading_wrapper.style-6 > .style-6:after {
+  margin-right: 20px;
+  right: 100%;
+}
+
+/* heading icons */
+.style-1 > .heading_icon:before {
+  margin-right: 0;
+  margin-left: 0.2em;
+  text-align: center;
+  width: 35px;
+}
+
+.style-2 > .heading_icon:before, .style-5 > .heading_icon:before, .style-6 > .heading_icon:before {
+  margin-right: 0;
+  margin-left: 0.2em;
+  text-align: right;
+}
+
+/*  INFO BOXES
+	========================================================================== */
+/* banner icon */
+.info_box p[class^="icon-"]:before, .info_box p[class*=" icon-"]:before {
+  margin: -12px -35px 0 20px;
+}
+
+/* banner text */
+.info_box p {
+  padding: 0 40px 0 10px;
+}
+
+.info_box .icon-cancel {
+  left: 10px;
+  right: auto;
+}
+
+/* Latest News
+   ========================================================================== */
+/* style 1 */
+.latest_news.style-1 .date {
+  float: right;
+  text-align: left;
+  padding-right: 0;
+  padding-left: 5px;
+  border-width: 0 0 0 1px;
+}
+.latest_news.style-1 .text {
+  margin-left: auto;
+  margin-right: 55px;
+}
+
+/* style 2 */
+.latest_news.style-2 figure {
+  padding-right: 0;
+  padding-left: 15px;
+}
+.latest_news.style-2 .text:first-child {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+/* ==========================================================================
+   WIDGETS
+   ========================================================================== */
+.widget > ul, .widget .menu {
+  padding-right: 0;
+}
+.widget > ul > li > ul, .widget > ul > li > .sub-menu, .widget > ul > li > .children, .widget .menu > li > ul, .widget .menu > li > .sub-menu, .widget .menu > li > .children {
+  padding-right: 15px;
+  padding-left: 0;
+  border-width: 0 1px 0 0;
+}
+.widget > ul ul, .widget .menu ul {
+  padding-right: 15px;
+  padding-left: 0;
+}
+.widget .sub-menu li a, .widget .children li a {
+  position: relative;
+}
+.widget .sub-menu li a:after, .widget .children li a:after {
+  left: auto;
+  right: 0;
+  margin-left: auto;
+  margin-right: -63px;
+}
+.widget #loginform label {
+  text-align: right;
+}
+
+/* search widget */
+.wp-search-form span {
+  right: auto;
+  left: 0;
+}
+.wp-search-form input {
+  width: 100%;
+  padding-left: 40px !important;
+  padding-right: 20px !important;
+}
+
+/* widget titles */
+.sidebar-widgets .widget > h5:after, .footer_widgets .widget > h5:after {
+  right: 0;
+  left: auto;
+}
+
+/* Latest Posts */
+.widget_latest_posts .post-thumb, .widget_popular_posts .post-thumb {
+  float: right;
+  margin-right: auto;
+  margin-left: 10px;
+}
+.widget_latest_posts .icon-comment-empty, .widget_popular_posts .icon-comment-empty {
+  margin-right: auto;
+  margin-left: 2px;
+}
+
+.flickr_thumbs li {
+  float: right;
+}
+
+/* ==========================================================================
+   BREADCRUMB MENU
+   ========================================================================== */
+.breadcrumb {
+  text-align: right;
+}
+.breadcrumb a.icon-home:before {
+  margin-right: 0;
+  margin-left: 5px;
+  text-align: right;
+}
+.breadcrumb .icon-angle-right:before {
+  content: "\f104";
+}
+.breadcrumb > * {
+  float: right;
+  margin-left: 3px;
+}
+
+/* ==========================================================================
+   SOCIAL MEDIA ICONS
+   ========================================================================== */
+/* social share */
+.social_share_holder .icon-share:after {
+  margin-right: 10px;
+}
+.social_share_holder .social_media li {
+  margin: 0 3px 4px 0;
+}
+.social_share_holder .social_media li:last-child {
+  margin: 0;
+}
+
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+/* client image */
+.client_image {
+  float: right;
+}
+
+/* quotes */
+.testimonial .text {
+  /* '' */
+  /* '' */
+}
+.testimonial .text .icon-quote-right {
+  padding-left: 0;
+  padding-right: 6px;
+}
+.testimonial .text .icon-quote-left {
+  padding-right: 0;
+  padding-left: 6px;
+}
+.testimonial .text .icon-quote-left:before {
+  content: '\f10e';
+  margin-right: 0;
+}
+.testimonial .text .icon-quote-right:before {
+  content: '\f10d';
+  margin-right: 0;
+}
+
+/* testimonial left aligned text */
+.testimonials.left .testimonial .with_image.text {
+  margin-left: auto;
+  margin-right: 140px;
+}
+.testimonials.left .client_image {
+  float: right;
+}
+.testimonials.left .client_info {
+  float: right;
+  text-align: left;
+}
+
+/* testimonials centered */
+.testimonials.center .text {
+  margin-left: auto;
+  margin-right: 0;
+}
+.testimonials.center .client_image img {
+  float: right;
+}
+
+/* ==========================================================================
+   CAROUSELS
+   ========================================================================== */
+/* navigation */
+.owl-carousel .owl-nav {
+  /* '' */
+  /* '' */
+}
+.owl-carousel .owl-nav .owl-next {
+  left: -40px;
+  right: auto;
+}
+.owl-carousel .owl-nav .owl-prev {
+  right: -40px;
+  left: auto;
+}
+.owl-carousel .owl-nav .icon-left-open:before {
+  content: '\e75e';
+}
+.owl-carousel .owl-nav .icon-right-open:before {
+  content: '\e75d';
+}
+
+/* hover state */
+.owl-carousel:hover .owl-nav .owl-next {
+  right: auto;
+  left: 0;
+}
+.owl-carousel:hover .owl-nav .owl-prev {
+  left: auto;
+  right: 0;
+}
+
+/* dots */
+.dots-holder {
+  left: -17px;
+  right: auto;
+}
+
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+/* Contact Form (native)
+   ========================================================================== */
+.rt_form > ul .security-question,
+.rt_form > ul .submit-button {
+  float: right;
+  margin-right: auto;
+  margin-left: 10px;
+}
+.rt_form .loading {
+  float: left;
+}
+
+/* Gravity Forms (plugin)
+   ========================================================================== */
+html[dir="rtl"] .gform_wrapper div input.button.gform_next_button,
+html[dir="rtl"] .gform_wrapper div input.button.gform_button[type="submit"] {
+  float: right;
+}
+
+/* ==========================================================================
+   3RD PARTY PLUGIN FIXES
+   ========================================================================== */
+.chosen-container .chosen-drop {
+  left: auto;
+  right: -9999px;
+}
+
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: auto;
+  right: 0;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+/* Tablet Portrait and Smaller screen and (max-width : 979px)
+   ========================================================================== */
+@media screen and (max-width: 979px) {
+  body #left_side {
+    margin-right: -290px;
+    margin-left: auto;
+  }
+
+  #right_side {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .mobile-menu-active #left_side {
+    margin-right: 0;
+    margin-left: auto;
+  }
+  .mobile-menu-active #right_side {
+    margin-right: 290px;
+    margin-left: auto;
+  }
+  .mobile-menu-active #right_side:before {
+    right: 0;
+    left: auto;
+  }
+
+  #footer.fixed_footer {
+    right: auto;
+  }
+}
+/* Extra small devices Phones screen and (max-width : 767px)
+   ========================================================================== */
+@media screen and (max-width: 767px) {
+  .tab_contents {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+}
+/* Small devices Tablets screen and (min-width : 768px)
+   ========================================================================== */
+@media screen and (min-width: 768px) {
+  .border_grid:not(.filterable) [class^="vc_col-"]:after, .border_grid:not(.filterable) [class*=" vc_col-"]:after,
+  .border_grid:not(.filterable) [class^="col-"]:after, .border_grid:not(.filterable) [class*=" col-"]:after {
+    border-width: 0 1px 0 0;
+  }
+}
+/* Medium devices Desktops screen and (min-width : 992px)
+   ========================================================================== */
+@media screen and (min-width: 992px) {
+  .border_grid:not(.filterable) [class^="vc_col-"]:after, .border_grid:not(.filterable) [class*=" vc_col-"]:after,
+  .border_grid:not(.filterable) [class^="col-"]:after, .border_grid:not(.filterable) [class*=" col-"]:after {
+    border-width: 0 1px 0 0;
+  }
+}
+/* Large devices Desktops screen and (min-width : 1199px)
+   ========================================================================== */
+@media screen and (min-width: 1199px) {
+  .border_grid:not(.filterable) [class^="vc_col-"]:after, .border_grid:not(.filterable) [class*=" vc_col-"]:after,
+  .border_grid:not(.filterable) [class^="col-"]:after, .border_grid:not(.filterable) [class*=" col-"]:after {
+    border-width: 0 1px 0 0;
+  }
+}

@@ -1,0 +1,256 @@
+/* ==========================================================================
+   WIDGETS
+   ========================================================================== */
+
+	.widgets_holder{
+		.widget {
+			border-style: solid;
+			border-width: 1px 0 0 0;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		.widget:first-child{
+			border-width: 0;
+		}
+	}
+
+
+	.widget{
+		> ul, .menu{
+			padding-left: 0;
+			list-style: none;
+			position: relative;
+			overflow: hidden;
+
+				> li > ul, > li > .sub-menu, > li > .children{
+					border-style: solid;
+					border-width: 1px 0 0 0;
+					padding-left: 15px;
+					padding-top: 10px;
+					padding-bottom: 10px;
+				}
+
+				ul{
+					list-style: none;
+					padding-left: 15px;
+					margin: 5px 0;
+				}
+
+				> li{ 
+					line-height: 160%;
+					padding: 5px 0;
+				}
+
+				> li a{ 
+					text-decoration: none;
+				}
+
+				> li a:hover{ 
+					text-decoration: underline;
+				}	
+
+				> li{
+					border-style: solid;
+					border-width: 0 0 1px 0;						
+				}
+
+				> li:last-child{
+					border-width: 0;						
+				}				
+		}
+
+
+		.sub-menu, .children{
+
+			li a {
+				position: relative;
+			}
+
+			li a:before {		
+				content: "\f105";
+				font-family: "fontello";
+				position: absolute;
+				left: -14px;
+			}
+
+		}
+
+		#loginform label{
+			width: 30%;
+			text-align: left;
+		}
+	}
+
+
+	/* search widget */
+	.wp-search-form{
+		li{
+			position: relative;
+		}
+
+		span{
+			bottom: 0;
+			cursor: pointer;
+			line-height: 40px;
+			opacity: 0.3;
+			position: absolute;
+			right: 0;
+			text-align: center;
+			top: 1px;
+			width: 40px;
+		}
+
+		span:hover{
+			opacity: 1;
+		}	
+
+		input{
+			width: 100%;
+			padding-right: 40px !important;
+		}
+	}
+
+	/* widget titles */
+	.sidebar-widgets, .footer_widgets, .wpb_widgetised_column, .sidebar, #tools{
+		.widget{
+			margin-bottom: 0;
+		}
+
+		.widget > h5{
+			letter-spacing: 1px;
+		}
+
+		.widget > h5{
+			position: relative;
+			padding-bottom: 10px;
+		}
+
+		.widget > h5:after{
+			content: "";
+			width: 15px;
+			height: 1px;
+			position:absolute;
+			left: 0;
+			bottom:0;
+		}	
+	}
+
+	/* Composer widgets */
+	.wpb_widgetised_column{
+		.widget{
+			margin-bottom: 25px;
+		} 
+	}
+
+	/* Latest Posts */
+	.widget_latest_posts, .widget_popular_posts{
+		> div{
+			@include clearfix();
+			margin-bottom: 15px;
+		}
+
+		.post-thumb{
+			float: left;
+			margin-right: 10px;
+		}
+
+		.meta{
+			display: block;
+			letter-spacing: 1px;
+			font-size: 11px;
+
+			a{
+				text-decoration: none;
+			}
+		}	
+
+		p:last-child{
+			margin-bottom: 0;
+		}
+
+		.title{
+			text-decoration: none;
+		}
+
+		.title:hover{
+			text-decoration: underline;
+		}	
+
+		.icon-comment-empty{
+			margin-right: 2px;
+		}
+	}
+
+	/* left side widgets holder */
+	.widgets_holder.sidebar-widgets{
+		.widget {
+			padding: 20px;
+		}
+	}
+
+	/* WP calendar */
+	.widget_calendar table{
+		width: 100%;
+	}
+
+	/* tag clound */
+	.widget_tag_cloud a{
+		font-size: 14px !important;
+		padding: 10px;
+		border-style: solid;
+		border-width: 1px;
+		padding: 5px;
+		display: inline-block;
+		margin-bottom: 10px;
+		text-decoration: none;	
+	}
+
+	.widget_tag_cloud a:hover{
+		border-width: 0;
+		padding: 6px;
+	}	
+
+	/* flickr */
+	.flickr_thumbs {
+		margin: 10px 0 10px 0 !important;
+		padding: 0;
+		overflow: hidden;
+		border:0 !important;
+		background:none !important;
+	}
+
+	.flickr_thumbs li {
+		list-style: none;
+		float: left;
+		margin:  0 2% 2% 0 !important;
+		padding: 0 !important;
+		border:0 !important;
+		background:none !important;
+		width:31%;
+	}
+
+	.flickr_thumbs li a {}
+
+	.flickr_thumbs li img {
+		display: block;
+	}
+
+	.flickr_thumbs li a img {
+		border: none;
+		width:100%;
+	}
+
+	.flickr_thumbs li .frame {
+		margin:0 !important;
+		padding:5px !important;
+	}
+
+	.flickr_thumbs li.hide{
+		display:none;
+	}
+
+	.flickr_thumbs li:hover img{	
+		opacity: 0.8;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";  
+	}			

@@ -1,0 +1,35 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Pricing Table For WPBakery Page Builder\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-18 02:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. Description of the plugin
+msgid "add-on for the WordPress Visual Composer plugin."
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://topdigitaltrends.net/"
+msgstr ""
+
+#. URI of the plugin
+msgid "http://www.topdigitaltrends.net/post-carousel-for-visual-composer/"
+msgstr ""
+
+#. Author of the plugin
+msgid "Nasir"
+msgstr ""
+
+#. Name of the plugin
+msgid "Pricing Table For WPBakery Page Builder"
+msgstr ""

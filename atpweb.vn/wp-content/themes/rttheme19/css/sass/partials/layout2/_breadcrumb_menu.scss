@@ -1,0 +1,59 @@
+/* ==========================================================================
+   BREADCRUMB MENU
+   ========================================================================== */
+	.breadcrumb{
+		@include clearfix();
+		font-weight:normal; 
+		font-size:11px;  	
+		text-align: left;     
+		clear:both;  
+		position:relative; 
+		display:block;  
+		padding: 15px 25px 10px 25px;
+		margin: 0 -25px;
+		line-height:100%;     
+
+		ol{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li{
+			display: inline;
+		}
+
+		div{
+			display: inline;
+		}
+
+		a{
+			text-decoration:none; 
+		}
+
+		a:hover{
+			text-decoration:none;
+			opacity: 0.8;
+		} 
+			  
+		a.icon-home:before{
+			margin-right: 5px;
+			line-height: 100%;
+			margin-left: 0;
+			text-align: left;
+		} 
+
+		span:before{
+			width:auto;
+		}
+	}
+	
+	.sub_page_header{
+
+		&.center-style .breadcrumb{
+			margin: auto;
+			max-width: 100%;
+			text-align: center;
+			padding: 5px 25px;
+		}
+	}		

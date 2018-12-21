@@ -1,0 +1,296 @@
+/* ==========================================================================
+   MEDIA QUERIES FOR LAYOUT 2
+   ========================================================================== */
+
+
+/* Tablet Portrait and Smaller #{$rt-mobile-all}
+   ========================================================================== */
+	@media #{$rt-mobile-all} {
+
+		//logo
+		#logo{
+			display: block;		
+			padding: 10px;	
+			float: none;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			max-width: 300px;
+			max-height: 260px;
+
+				img{
+					margin: auto;
+					max-width: 280px;
+					max-height: 240px;
+				}
+		}
+
+		.top-header{
+			padding: 0;
+		}
+
+		.header-elements{
+			padding: 20px;
+			min-height: 100% !important;
+		}
+ 	
+ 		.mobile-menu-button {
+			display: block;
+		}
+
+		.header-right{
+			margin-top: 20px;
+			margin-left: -290px;		
+			width: 290px;	
+			position: absolute; 
+			@include transition(margin 0.3s ease 0.1s);	
+			z-index: 1001;
+			left: 0;
+			top: auto;
+			bottom: auto;
+		}
+
+ 		// Mobile Navigation
+ 		.mobile-menu-active{
+			
+			.header-right{
+				margin-left: 0;		
+				@include transition(margin 0.3s ease 0.1s);	
+			}
+
+			#main_content:before {
+				background: rgba(0, 0, 0, 0.6);
+				content: "";
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 1000000;
+			}
+
+		}
+  
+		
+		.header-right > nav{
+			float: none;
+			width: 100%;
+			padding: 0;
+			text-align: left;
+		}
+
+		#navigation{
+			
+			> li{
+				float: none;
+				display: block;
+			}
+
+			li a{
+				position: relative;
+				display: block;
+				text-align: left;
+				border-width: 0 0 1px 0;
+				padding: 10px 20px;
+			}
+
+			li a{
+				position: relative;
+				display: block;
+				text-align: left;
+				border-width: 0 0 1px 0;
+				padding: 15px 20px !important;
+			}
+
+			// sub menus
+			ul{
+				display: none;
+				position: relative;
+				right: 0;
+				width: 100%; 
+				margin: 0 !important;
+				padding: 0;
+				border-width: 0;
+			}
+
+			> li > ul{
+				margin: 0;
+			}
+
+			ul li:first-child a{
+				border-width: 0 0 1px 0;
+			}
+
+			li:hover > ul		
+			{
+				display: none;
+			}
+
+			li.menu-item-has-children
+			{
+				> a {
+					padding-right: 65px;
+					@include icon("\2b");
+					position: relative;
+				}											
+				
+				&.current-menu-item > a{
+					@include icon("\2d");
+				}
+
+				> a:after{
+					border-style: solid;
+					border-width: 0 0 0 1px;
+					height: 100%; 
+					position: absolute;
+					right: 50px; 
+					content: "";
+					top: 0;
+					z-index: 999;
+				}					
+
+				> a:before{
+					cursor: pointer;
+					margin: -5px 0 0 0 !important;
+					position: absolute;
+					right: 20px;
+					top: 50%;
+					text-align: center;
+					width: auto !important;
+					z-index: 999;
+					font-size: 14px;
+					color: rgba(255,255,255,0.4);
+				}
+			}
+
+
+			li.current-menu-item
+			{										
+				> ul{
+					display: block;	
+				}										
+			}
+
+			// indicator
+			li.current-menu-ancestor:after,
+			li.current-menu-item:after,
+			li:hover:after,
+			li:after{						
+				content: none !important;
+			} 
+
+		} 
+
+		#navigation > li a{
+			font-size: 14px;
+		}
+
+		/* Tools */
+		#tools{	
+			float: none;
+		
+			> ul:first-child{
+				display: none;				
+			}
+
+			> ul{
+				float: none;
+
+				> li{
+					width: 25%;
+				}
+
+				> li > span:first-child{
+					padding: 18px !important;
+				}				
+			}
+
+			> ul > li > div{
+				width:100%;
+			}
+		}
+	}
+
+/* Extra small devices Phones #{$rt-xs}
+   ========================================================================== */
+	@media #{$rt-xs} {
+		//logo
+		#logo{
+			display: block;		
+			padding: 10px;	
+			float: none;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			max-width: 200px;
+			max-height: 180px;
+
+				img{
+					margin: auto;
+					max-width: 180px;
+					max-height: 160px;
+				}
+		}
+	}
+
+	//devices smaller than 375
+	@media screen and (max-width: 375px){
+		//logo
+		#logo{
+			max-width: 200px !important;
+			max-height: 180px !important;
+
+				img{
+					max-width: 180px !important;
+					max-height: 160px !important;
+				}
+		}
+	}
+
+/* Shortcout buttons on the main navigation
+   ========================================================================== */
+	@media (min-width : 980px) and (max-width : 1200px) {
+
+			/* Tools */
+			#tools{	
+
+					> ul:first-child{
+						display: block;
+
+						span{					
+							cursor: pointer;		 
+						}
+
+						span:before{				 
+							@include transition(all 0.4s ease 0s);
+						}
+
+						span.active:before{
+							@include transform(rotate(45deg));
+						}
+					}		
+
+					> ul:last-child{
+						display: none;
+					}				
+
+					> ul {
+						float: none;
+					}
+
+					> ul.active {
+						display: block; 
+						position: absolute;
+						right: 0;
+						z-index: 120;
+
+						> li > span:first-child{
+							padding: 18px !important;
+						}
+					}
+
+			}
+	}
+
+
+

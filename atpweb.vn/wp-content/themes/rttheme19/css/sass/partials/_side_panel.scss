@@ -1,0 +1,276 @@
+
+/* ==========================================================================
+   SIDE PANEL
+   ========================================================================== */
+	.side-panel-holder{
+		bottom: 0;
+		position: fixed;
+		right: 0;
+		top: 0;
+		@include transform(translateX(400px));
+		width: 400px;
+		z-index: 520;
+		overflow: hidden;
+		-webkit-overflow-scrolling: touch;		
+		backface-visibility: hidden;
+
+		.ps-scrollbar-y-rail{
+			display: none;
+		}		
+	}
+
+	.side-panel-wrapper{
+		padding: 30px 50px;
+		height: 100%;
+		width: 100%;
+		display: table;
+
+		#side_panel_navigation, .side-panel-contents > .wp-search-form{
+			width: 100%;
+			margin: 0 auto 30px;
+		}
+		
+		.wp-search-form input[type="text"]{
+			padding: 12px 20px; 
+			height: 50px;
+			border-width:  2px;
+			outline-style: none;
+			border-radius: 50px;
+		}
+
+		.wp-search-form span{
+			line-height: 50px;
+			width: 50px;
+			top: -1px;
+			right: 20px;
+			text-align: right;
+		}
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.side-panel-widgets{
+		display: inline-block;
+
+		> .widget{
+
+			margin-bottom: 30px;
+
+			&:not(:last-child){
+				border-width: 0 0 1px 0;
+				border-style: solid;
+				padding-bottom: 30px;
+			}
+
+		}
+	}
+
+	#rt-side-navigation > li,
+	.side-panel-widgets > .widget,
+	.side-panel-contents > .wp-search-form,
+	.rt-language-list h5,
+	.rt-language-list li,
+	.side-panel-contents > .widget.widget_shopping_cart,
+	.side-panel-contents > .widget.rt_woocommerce_login
+	{
+		opacity: 0;
+		@include transform(translateY(10px));
+	}
+
+
+	#rt-side-navigation:not(.animate),
+	.side-panel-widgets:not(.animate),
+	.side-panel-contents > .wp-search-form:not(.animate),
+	.rt-language-list:not(.animate),
+	.side-panel-contents > .widget.widget_shopping_cart:not(.animate),
+	.side-panel-contents > .widget.rt_woocommerce_login:not(.animate)
+	{
+		display: none;
+	}
+
+
+	.admin-bar 	.side-panel-wrapper{
+		padding-top: 62px;
+	}
+
+/* Side Navigation
+   ========================================================================== */
+	#rt-side-navigation{
+		list-style: none outside none;
+		padding: 0;
+		margin-bottom: 30px;
+
+		li{
+			position: relative;
+			display: block;  
+
+			//top level items
+			a{
+				padding: 10px 0;
+				display: block; 
+				text-decoration:none;
+				outline: none; 
+				border-width: 0 0 1px 0;
+				border-style: solid;
+				position: relative;
+				font-size: 14px;
+			}
+
+			a > sub {
+				display: none;
+			}
+
+			// hover and active states
+			> a:hover,
+			&.current-menu-ancestor > a,
+			&.current-menu-item > a
+			{
+				text-decoration:none; 
+			} 	
+
+			//has sub menu
+			&.menu-item-has-children > a:after{
+				content: "\2b";
+				font-family: "fontello";
+				float: right;
+			}
+
+			&.menu-item-has-children.active > a:after{
+				content: "\2d";
+			}
+
+		}
+
+		// sub menus
+		ul{
+			list-style: none outside none;
+			margin: 0;
+			padding: 0;				
+			display: none;
+
+			a{
+				text-decoration:none;  
+			}
+
+			> li > a{
+				padding-left: 15px;
+			}
+
+			> li li > a{
+				padding-left: 20px;
+			}
+
+			> li li li > a{
+				padding-left: 25px;
+			}
+
+			> li li li li > a{
+				padding-left: 30px;
+			}			
+
+			> li li li li li > a{
+				padding-left: 35px;
+			}			
+		}
+
+		ul.menu-visible{
+			display: block;
+		}
+	}
+
+/* Mini Cart
+	========================================================================== */
+	.side-panel-contents > .widget_shopping_cart{
+		.cart_list li{
+			border-style: solid;
+			border-width: 0 0 1px 0;
+			padding: 20px 0 20px 54px;
+		}
+
+		.total{
+			padding: 30px 0 !important;
+		}
+
+		.cart_list li.empty{
+			padding: 20px 0;
+			border: none;
+		}
+	}
+		
+/* Language List
+	========================================================================== */
+	.rt-wpml-menu-button{
+
+		span{
+			text-decoration: none;			 
+			position: relative;
+			display: inline-block;
+			text-transform: uppercase;
+			font-family: Arial;
+			font-weight: bold;
+			font-size: 14px;
+			vertical-align: middle;
+		}
+	}
+
+	.rt-language-list{
+
+		margin: 30px auto;
+		display: block;
+
+		h5{
+			margin-bottom: 30px;
+		}
+
+		> ul{
+			list-style: none;
+			padding: 0;			
+
+			li{
+				display: block;
+				padding-bottom: 10px;
+				margin-bottom: 10px;
+				border-width: 0 0 1px;
+				border-style: solid;
+
+				a{
+					padding: 10px 0;
+					text-decoration: none;
+					vertical-align: middle;
+				}
+
+				a:hover{
+					text-decoration: none;
+				}			
+
+				span{
+					padding-left: 10px;
+				}	
+			}
+		}
+	}
+
+/* Login
+	========================================================================== */
+	.side-panel-contents > .widget.rt_woocommerce_login{
+
+		margin: 30px auto;
+		display: block;
+
+		h5{
+			margin-bottom: 30px;
+		}
+
+		.form-row > label {
+			display: block;
+			text-align: left;
+			font-weight: inherit;
+		}
+
+		.input-text, .button{
+			width: 100%;
+		}
+
+	}

@@ -1,0 +1,67 @@
+/* ==========================================================================
+   TYPOGRAPHY
+   ========================================================================== */
+
+   p{
+   	margin-bottom: 20px;
+   }
+
+/* Links
+   ========================================================================== */
+	a{
+		//use color link-font-color;
+		text-decoration: underline;
+	}
+
+	a:hover{
+		//use color link-font-color;
+		text-decoration: none;
+	}
+
+/* Headings
+   ========================================================================== */
+	h1,h2,h3,h4,h5,h6{ 
+		//use color heading-color;
+		margin-top: 0;
+	}
+		
+	h1{
+		font-size: 44px; 
+	}
+
+	h2{
+		font-size: 32px; 	
+	}
+
+	h3{
+		font-size: 28px; 
+	}
+
+	h4{
+		font-size: 26px; 		
+	}
+
+	h5{
+		font-size: 24px; 		
+	}
+
+	h6{
+		font-size: 22px;  	
+	}
+
+	/*	heading colors and links  */
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+		//use color heading-color;
+		text-decoration:underline;
+	}
+
+	h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{ 
+		//use color heading-color;
+	}
+
+	/* heading with body fonts */
+	.clean_heading{
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing:antialiased;
+		text-rendering: optimizelegibility;	
+	}

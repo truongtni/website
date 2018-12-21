@@ -1,0 +1,53 @@
+/* ==========================================================================
+   TEAM
+   ========================================================================== */
+
+	.type-staff.loop{
+		text-align: center;
+		
+		.person_image{
+			position: relative;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+
+		.person_name{
+			margin: 0;
+
+			a{
+				text-decoration: none;
+			}
+
+			a:hover{
+				text-decoration: none;
+				opacity: 0.7;
+			}
+		}
+
+		.profile{
+			border-width: 1px 0 0 0;
+			border-style: solid;
+			padding: 10px 0;	
+			margin-top: 10px;				
+		}
+
+		.position{
+			font-size: 13px;
+			font-style: oblique;
+		}
+
+		.person_links_wrapper{
+			border-width: 1px 0 0 0;
+			border-style: solid;
+			padding-top: 15px;
+		}
+	}
+
+	.type-staff.single{
+		.person_links_wrapper{
+			margin-top: 10px;
+			text-align: center;
+			position: relative;
+			z-index: 1;
+		}
+	}

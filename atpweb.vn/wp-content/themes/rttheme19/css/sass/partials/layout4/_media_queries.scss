@@ -1,0 +1,122 @@
+/* ==========================================================================
+   MEDIA QUERIES FOR LAYOUT 3
+   ========================================================================== */
+
+
+/* Tablet Portrait and Smaller #{$rt-mobile-all}
+   ========================================================================== */
+	@media #{$rt-mobile-all} {
+
+		//logo
+		#logo{
+			display: block;		
+			float: none;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			
+				img{
+					margin: auto;
+				}
+		}
+
+		.site-logo .sitename{
+			margin: auto;
+		}
+		
+		.top-header{
+			padding: 0;
+		}
+
+		.header-elements{
+			min-height: 100% !important;
+		}
+ 	
+ 		.mobile-menu-button {
+			display: block;
+		}
+
+		.header-right{
+			position: absolute; 
+			right: 10px;
+			top: 0;
+
+			nav{
+				display: none;
+			}
+		}
+
+		.header-center{
+			display: inline-block;
+		}
+
+		.rt-top-bar,.header-widget, .header-left{
+			display: none;
+		}
+
+		.sub_page_header .content_row_wrapper > div {
+			text-align: center;
+		}	
+
+		.breadcrumb {
+			text-align: center !important;
+			display: inine-block !important;
+			position: relative !important;
+			right: auto !important;
+			max-width: 100% !important;
+			transform: none !important;
+			margin-bottom: 30px;
+			line-height: 180% !important;
+		}
+
+		.row.sub_page_header .page-title{
+			text-align: center;
+			max-width: 100%;
+			position: relative !important;
+
+			h1{
+				font-size: 24px !important;
+			}
+		}	
+	}
+
+/* Extra small devices Phones #{$rt-xs}
+   ========================================================================== */
+	@media #{$rt-xs} {
+		//logo
+		#logo{
+			display: block;		
+			float: none;
+			margin: auto;
+			text-align: center;
+			position: relative;
+
+				img{
+					margin: auto;
+				}
+		}
+	}
+
+/* Shortcout buttons on the main navigation
+   ========================================================================== */
+	@media screen and (max-width : 768px) {
+
+		#tools > ul > li a:not(.rt-menu-button) {
+			display: none;
+		}
+
+		.side-panel-wrapper {
+			padding: 30px 25px;
+		}
+
+		.side-panel-holder{
+			width: 250px;
+		}
+
+		.side-panel-contents > * {
+			margin-bottom: 40px;
+		}		
+	}
+
+
+

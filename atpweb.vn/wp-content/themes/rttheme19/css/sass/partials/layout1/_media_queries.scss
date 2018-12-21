@@ -1,0 +1,135 @@
+/* ==========================================================================
+   MEDIA QUERIES FOR LAYOUT 1
+   ========================================================================== */
+
+/* Tablet Portrait and Smaller #{$rt-mobile-all}
+   ========================================================================== */
+	@media #{$rt-mobile-all} {
+		#container{
+			position: static;
+		}
+
+		//logo
+
+		// desktop view logo
+		#logo{
+			display: none;
+		}
+
+		// mobile view logo
+		#mobile-logo{
+			display: block;
+		}		
+
+		// top bar
+		body #top_bar{
+			height: auto;
+		}
+
+		//left side
+		body #left_side{
+			margin-left: -$left-side-min-width+px; 
+			height: 100%;
+			backface-visibility:hidden;
+			padding: 0;
+
+			.left-side-background-holder{
+				display: none; 
+			}		 
+		}
+
+		.touch #left_side{
+			overflow-x: hidden;
+		}
+
+		.no-touch #left_side{
+			overflow-x: auto;
+		}
+
+		#left_side{
+			width: $left-side-min-width+px;
+			&.shadow{
+				@include box-shadow( none );
+			}			
+		}
+
+		//right side
+		#right_side{
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.mobile-menu-active{
+			
+			overflow: hidden;
+
+			#container{
+				overflow-x: hidden;
+			}
+
+			#left_side{
+				margin-left: 0;			
+				@include transition(margin 0.3s ease 0.1s);	
+			}
+
+			#right_side{		
+				margin-left: $left-side-min-width+px;
+				@include transition(margin 0.3s ease 0.1s);	
+				position: fixed;
+				overflow: hidden;
+			}	
+
+			&.admin-bar #right_side{
+				top: 32px;
+			}
+
+			#right_side:before {
+				background: rgba(0, 0, 0, 0.6);
+				content: "";
+				height: 100%;
+				left: 0;
+				position: absolute;
+				top: 0;
+				width: 100%;
+				z-index: 9999;
+			}
+
+
+			#left_side.shadow #navigation ul{
+				box-shadow: none;
+			}
+		}
+
+	}
+
+/* //Tablet Landscape and Bigger #{$rt-big-all}
+   ========================================================================== */
+	@media #{$rt-big-all} {
+		// mobile logo view 
+		#mobile-logo{
+			display: none;
+		}		
+	}
+
+/* Extra small devices Phones #{$rt-xs}
+   ========================================================================== */
+	@media #{$rt-xs} {
+
+		//logo
+		#mobile-logo .logo-holder img{
+			max-width: 220px;
+		}
+
+		.mobile-menu-active.admin-bar #right_side{
+			top: 46px;
+		}
+
+	}
+ 
+	//devices smaller than 320
+ 	@media screen and (max-width: 320px){
+		//logo
+		#mobile-logo .logo-holder img{
+			max-width: 180px;
+		} 
+	}

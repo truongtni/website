@@ -1,0 +1,125 @@
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+
+	.testimonial{	
+		&.col-md-12{
+			font-size: 16px;
+		}	
+	}
+
+	/* client image */
+	.client_image{
+		display: inline-block;
+		overflow: hidden;
+		margin: auto;		
+		float: left;
+		padding: 10px;
+		border-radius: 50%;
+		border-width: 1px 0 1px 0;
+		border-style: solid;
+		background-color: rgba(255, 255, 255, 0.11);
+		//use color border-color;
+	}
+
+	/* client info */ 
+	.client_info{
+		font-style: italic;
+		//use color secondary-font-color;
+		font-size: 13px;
+		display: block;
+	}
+
+	/* quotes */ 
+	.testimonial .text{
+		.icon-quote-right {
+			font-size: 20px;
+			margin-top: 2px;
+			padding-left: 6px;
+			position: absolute;
+			//use color border-color-as-font-color;
+		}	
+
+		.icon-quote-left {
+			//use color border-color-as-font-color;
+			font-size: 20px;
+			padding-right: 6px;
+		}	
+	}
+
+	/* testimonial left aligned text */
+	.testimonials.left{
+
+		.testimonial.col-md-12{
+			padding: 0;
+		}	
+
+		.testimonial .with_image.text{
+			margin-left: 140px;
+		}
+
+		.client_image{
+			display: inline-block;
+			overflow: hidden;
+			margin: auto;		
+			float: left;
+			padding: 10px;
+
+			img {
+				@include border-radius(50%);
+				display: block;
+				height: 100px;
+				overflow: hidden;
+				width: 100px;
+			}	
+		}	
+	}
+
+	/* testimonials centered */
+	.testimonials.center{
+		text-align: center;
+		padding: 20px;
+
+		.text{
+			margin-left: 0;
+		}
+
+		.client_image{
+			display: inline-block;
+			overflow: hidden;
+			margin: auto;
+			float: none;
+			clear: both;
+			
+			img {
+				@include border-radius(50%);
+				display: block;
+				height: 100px;
+				overflow: hidden;
+				width: 100px;
+				float: left;
+			}	
+		}	
+	}
+
+	/* testimonials centered big text */
+	.testimonials.center.big{
+		font-size: 20px;
+
+		/* client info */ 
+		.client_info{
+			font-size: 15px;
+		}
+
+
+	}
+
+	/* testimonial carousel (center) */
+	.testimonial-carousel.center{
+		padding: 0;
+
+		.testimonial.item{
+			width: 90%;
+			margin: auto;
+		}
+	}

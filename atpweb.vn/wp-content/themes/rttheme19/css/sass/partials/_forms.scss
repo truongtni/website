@@ -1,0 +1,226 @@
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+	button, input, optgroup, select, textarea {
+		color: inherit;
+		margin: 0;
+		font-size: 14px;
+		font-family: arial;		
+	}
+
+	.label, label{
+		//use color font-color;
+		font-size: 100%;
+		font-weight: auto;
+		line-height: 2.2em;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	//all form items that needs to be styled
+	input[type="text"],
+	input[type="input"],
+	input[type="password"], 
+	input[type="email"],
+	input[type="date"],
+	input[type="time"],
+	input[type="datetime-local"],
+	input[type="month"],
+	input[type="number"], 
+	input[type="url"], 
+	input[type="tel"], 
+	input[type="search"],
+	textarea,
+	select,
+	.select2-container .select2-choice
+	{
+		padding: 12px 10px;
+		border-width: 1px;
+		border-style: solid;	
+		background-color: rgba(0,0,0,0.02);
+		line-height: 100%;
+		height: 42px;
+		-webkit-appearance: none;
+		-webkit-border-radius:0; 
+		border-radius:0;		
+	}
+
+
+	input:focus,
+	textarea:focus,
+	select:focus{
+		background-color: transparent;
+		box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03);
+		outline: none;
+	}
+
+	select,form .customselect{
+		padding: 10px;
+	}
+
+	textarea{
+		line-height: 1.4em;
+		padding: 11px 10px;
+		height: auto;
+	}
+
+
+	input[type="submit"],
+	input[type="button"]{
+		border-width: 0;
+		border-style: solid;	
+		text-decoration: none;
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		z-index: 1;
+		padding: 12px 20px;
+		height: 42px;
+		-webkit-appearance: none;
+		-webkit-border-radius:0; 
+		border-radius:0;		
+		line-height: 1;
+		//use color icon-color-as-background-color;
+		//use color light-text-color;	
+		//use color border-color;	
+		
+		&:hover{
+			//use color primary-color-as-background-color;		
+		}
+		
+	}
+
+
+/* Contact Form (native)
+   ========================================================================== */
+	.rt_form{
+		
+		label{
+			display: none;
+			text-align: left;
+		}
+
+		> ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+			> .form-input{
+				margin-bottom: 10px;
+			}
+
+			.security-question,
+			.submit-button{
+				float: left;
+				margin-right: 10px;
+			}
+
+			#name, #email, #message{
+				width: 100%;
+			}
+
+			#math{
+				max-width: 55px;
+			}
+		}	
+
+		.error{
+			border-color: red;
+		}
+
+		.loading{
+			background: url(../../images/loading.gif) center center no-repeat;
+			display: none;
+			width: 40px;
+			height: 45px;
+			float: right;
+		}
+	}
+
+/* Contact Form 7 (plugin)
+   ========================================================================== */
+	.wpcf7{
+		input[type="text"],
+		input[type="input"],
+		input[type="password"], 
+		input[type="email"],
+		input[type="date"],
+		input[type="time"],
+		input[type="datetime-local"],
+		input[type="month"],
+		input[type="number"], 
+		input[type="url"], 
+		input[type="tel"],
+		textarea,
+		select{
+			width: 100%;
+		}
+
+		.wpcf7-list-item.first,
+		.wpcf7-response-output{
+			margin-left: 0;
+		}
+	}
+
+/* Gravity Forms (plugin)
+   ========================================================================== */
+	.gform_wrapper div{
+		input[type="text"],
+		input[type="input"],
+		input[type="password"], 
+		input[type="email"],
+		input[type="date"],
+		input[type="time"],
+		input[type="datetime-local"],
+		input[type="month"],
+		input[type="number"], 
+		input[type="url"], 
+		input[type="tel"],
+		input.medium
+		{	
+			margin: 0;
+			padding: 5px 10px;
+			font-size: $font-size-base;
+		}
+
+		select[multiple],
+		select[size] {
+			margin: 0 !important;
+			padding: 10px;
+			font-size: $font-size-base;
+		}
+
+		textarea{
+			margin: 0;
+			line-height: 1.4em;
+			padding: 11px 10px;
+			font-size: $font-size-base;
+		}
+
+		.ginput_container label{
+			text-align: left;
+		}
+
+		.gfield_label{
+			text-align: left;
+		}
+
+		.gfield_date_dropdown_month select, .gfield_date_dropdown_day select, .gfield_date_dropdown_year select{
+			padding-right: 45px;
+		}
+
+	}
+
+
+
+/* Ninja Forms
+   ========================================================================== */
+   .ninja-forms-form{
+		.label-above label{
+			text-align: left;
+		}
+
+		.ninja-forms-field-error{
+			color: red;
+		}   	
+   }

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   MAIN NAVIGATION
+   ========================================================================== */
+
+/* Desktop Navigation
+   ========================================================================== */
+	#navigation{
+		list-style: none outside none;
+		margin: 0;
+		padding: 0;
+
+		> li{
+			position: relative;
+			display: inline-block;
+			float: left;
+
+			//top level items
+			> a{
+				padding: $nav_item_top_padding $nav_item_horizontal_padding $nav_item_bottom_padding $nav_item_horizontal_padding;
+				display: inline-block;
+				text-align: center;
+				text-decoration:none;
+				outline: none;
+				//border-color: $nav_item_border_color;
+				border-width: 0 1px 0 0;
+				border-style: solid;
+				////color: $nav_item_font_color;
+				////background-color: $nav_item_background_color;
+			}
+
+			&:last-child > a{
+			//	border-width: 0;
+			}
+
+			// hover and active states
+			> a:hover,
+			&.current-menu-ancestor > a,
+			&.current-menu-item > a,
+			{
+				text-decoration:none;
+				//		border-color: $nav_item_border_color_active;
+				//		color: $nav_item_font_color_active;
+				//		background-color: $nav_item_background_color_active;
+			} 	
+		}
+
+		a > span {
+			display: block;
+			font-size: 85%;
+		}
+
+		// sub menus
+		ul{
+			display: none;
+			position: absolute;			
+			width: 240px;
+			list-style: none outside none;
+			z-index: 99999;
+			margin: 0;
+			padding: 0;	
+			text-align: left;
+
+			li{
+				position: relative;
+
+				// sub level items
+				a{
+					padding: $sub_nav_item_top_padding $sub_nav_item_horizontal_padding $sub_nav_item_bottom_padding $sub_nav_item_horizontal_padding;
+					display: block;
+					//	border-color: $sub_nav_item_border_color;
+					border-style: solid;
+					border-width: 0 0 1px 0; 	
+					text-decoration:none;	 
+					//	color: $sub_nav_item_font_color;
+					//	background-color: $sub_nav_item_background_color;					
+				}			
+
+				// hover and active states
+				a:hover, > .current-menu-ancestor > a{
+					text-decoration:none;
+				//	border-color: $sub_nav_item_border_color_active;
+				//	color: $sub_nav_item_font_color_active;
+				//	background-color: $sub_nav_item_background_color_active;					
+				}				
+			}	
+
+			li:first-child a{
+			//	border-width: 1px 0 1px 0; 	
+			}
+
+			//2+ level sub menus
+			
+			ul{
+				margin-left: 240px;
+				top: 0;
+			}
+
+			ul ul{
+				top: 0;
+			}
+
+		}
+
+		li.hover > ul,
+		li:hover > ul{
+			display: block;
+		}        
+
+		// indicator
+		//> li.current-menu-ancestor:after,
+		//> li.current-menu-item:after,
+		> li.hover:after,
+		> li:hover:after{
+				width: 0; 
+				height: 0; 
+				bottom: 0;
+				content: "";
+				position: absolute;  
+				border-right: 10px solid transparent;
+				border-left: 10px solid transparent;
+				border-top: 10px solid transparent;
+				border-bottom-width: 10px;
+				border-bottom-style: solid;
+			//	border-bottom-color: $nav_item_indicator_color;
+				left: calc(50% - 10px);
+				-moz-transform: scale(.9999);
+		} 	
+
+		> li:hover:after{
+			//	border-bottom-color: $nav_item_indicator_color_active;
+		}
+
+		> li li.menu-item-has-children:after{
+			content: "\f105";
+			font-family: fontello;
+			position: absolute;
+			z-index: 999;
+			right: 10px;
+			top: 0;
+			line-height: 14px;
+			font-size: 14px;
+			top: calc( 50% - 7px );
+		} 	
+
+
+		// Opposite direction for the drop down menus
+		> li.o-direction .sub-menu{
+
+			right: 0;
+			text-align: right;		
+
+			li.menu-item-has-children:after{
+				content: "\f104";
+				left: 10px;
+				right: auto;
+			}
+
+			//2+ level sub menus
+			ul{
+				margin-right: 236px;
+				margin-left: auto;
+			}
+
+		}
+
+
+
+
+	} 
+
+
+	//remove border of last menu item if shortcut buttons is not active
+	.header-right nav:last-child #navigation > li:last-child > a{
+		border-width: 0;
+	}	

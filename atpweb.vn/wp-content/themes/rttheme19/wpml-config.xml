@@ -1,0 +1,111 @@
+<wpml-config> 
+    <custom-types>
+        <custom-type translate="1">products</custom-type>
+        <custom-type translate="1">portfolio</custom-type> 
+        <custom-type translate="1">staff</custom-type>
+        <custom-type translate="1">testimonial</custom-type>         
+	</custom-types>    
+
+	<taxonomies>
+		<taxonomy translate="1">product_categories</taxonomy>
+		<taxonomy translate="1">portfolio_categories</taxonomy>
+        <taxonomy translate="1">testimonial_categories</taxonomy>
+	</taxonomies>
+
+    <admin-texts>
+        <key name="theme_mods_rttheme19">
+
+            <key name='rttheme19_product_list' />
+            <key name='rttheme19_staff_page' /> 
+            <key name='rttheme19_portf_page' /> 
+            <key name='rttheme19_blog_page' /> 
+            <key name='rttheme19_currency' />
+            <key name='rttheme19_currency_location' /> 
+            <key name='rttheme19_rss' />
+            <key name='rttheme19_rss_text' />
+            <key name='rttheme19_mail' />
+            <key name='rttheme19_mail_text' />
+            <key name='rttheme19_twitter' />
+            <key name='rttheme19_twitter_text' />
+            <key name='rttheme19_facebook' />
+            <key name='rttheme19_facebook_text' />
+            <key name='rttheme19_flickr' />
+            <key name='rttheme19_flickr_text' />
+            <key name='rttheme19_gplus' />
+            <key name='rttheme19_gplus_text' />
+            <key name='rttheme19_pinterest' />
+            <key name='rttheme19_pinterest_text' />
+            <key name='rttheme19_tumblr' />
+            <key name='rttheme19_tumblr_text' />
+            <key name='rttheme19_linkedin' />
+            <key name='rttheme19_linkedin_text' />
+            <key name='rttheme19_dribbble' />
+            <key name='rttheme19_dribbble_text' />
+            <key name='rttheme19_skype' />
+            <key name='rttheme19_skype_text' />
+            <key name='rttheme19_behance' />
+            <key name='rttheme19_behance_text' />
+            <key name='rttheme19_github' />
+            <key name='rttheme19_github_text' />
+            <key name='rttheme19_vimeo' />
+            <key name='rttheme19_vimeo_text' />
+            <key name='rttheme19_stumbleupon' />
+            <key name='rttheme19_stumbleupon_text' />
+            <key name='rttheme19_lastfm' />
+            <key name='rttheme19_lastfm_text' />
+            <key name='rttheme19_spotify' />
+            <key name='rttheme19_spotify_text' />
+            <key name='rttheme19_instagram' />
+            <key name='rttheme19_instagram_text' />
+            <key name='rttheme19_dropbox' />
+            <key name='rttheme19_dropbox_text' />
+            <key name='rttheme19_evernote' />
+            <key name='rttheme19_evernote_text' />
+            <key name='rttheme19_flattr' />
+            <key name='rttheme19_flattr_text' />
+            <key name='rttheme19_paypal' />
+            <key name='rttheme19_paypal_text' />
+            <key name='rttheme19_picasa' />
+            <key name='rttheme19_picasa_text' />
+            <key name='rttheme19_vkontakte' />
+            <key name='rttheme19_vkontakte_text' />
+            <key name='rttheme19_youtube-play' />
+            <key name='rttheme19_youtube-play_text' />
+            <key name='rttheme19_soundcloud' />
+            <key name='rttheme19_soundcloud_text' />
+            <key name='rttheme19_foursquare' />
+            <key name='rttheme19_foursquare_text' />
+            <key name='rttheme19_delicious' />
+            <key name='rttheme19_delicious_text' />
+            <key name='rttheme19_forrst' />
+            <key name='rttheme19_forrst_text' />
+            <key name='rttheme19_ebay' />
+            <key name='rttheme19_ebay_text' />
+            <key name='rttheme19_android' />
+            <key name='rttheme19_android_text' />
+            <key name='rttheme19_xing' />
+            <key name='rttheme19_xing_text' />
+            <key name='rttheme19_reddit' />
+            <key name='rttheme19_reddit_text' />
+            <key name='rttheme19_digg' />
+            <key name='rttheme19_digg_text' />
+            <key name='rttheme19_macstore' />
+            <key name='rttheme19_macstore_text' />
+            <key name='rttheme19_myspace' />
+            <key name='rttheme19_myspace_text' />
+            <key name='rttheme19_stackoverflow' />
+            <key name='rttheme19_stackoverflow_text' />
+            <key name='rttheme19_slideshare' />
+            <key name='rttheme19_slideshare_text' />
+            <key name='rttheme19_sina-weibo' />
+            <key name='rttheme19_sina-weibo_text' /> 
+            <key name='rttheme19_copyright' />
+            <key name='rttheme19_logo_url' />
+            <key name='rttheme19_sticky_logo_url' />
+            <key name='rttheme19_logo_url_2x' />
+            <key name='rttheme19_sticky_logo_url_2x' /> 
+
+        </key>
+    </admin-texts>  
+ 
+</wpml-config>

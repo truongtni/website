@@ -1,0 +1,98 @@
+/* ==========================================================================
+   CSS ANIMATIONS
+   ========================================================================== */
+   
+	.animation {
+		@include animation-duration(1s);
+		@include animation-fill-mode(both);
+	}
+
+	//tabs
+	@include keyframes(active_tabs) {
+		0% {
+			opacity: 0;    
+			@include transform(translateY(-10px));
+		}
+
+		100% {
+			opacity: 1;     
+			@include transform(translateY(0px));
+		}
+	}
+
+	//buttons
+	@include keyframes(buttons) {
+		0% {
+			width: 0;
+			opacity: 0;    
+		}
+
+		100% {
+			width: 100%;
+			opacity: 1;    
+		}	
+	}
+
+	//slider
+	@include keyframes(active_slide) {
+		0% {
+			opacity: 0;    
+			@include transform(translateY(-600px));
+		}
+
+		100% {
+			opacity: 1;     
+			@include transform(translateY(0px));
+		}
+	}
+
+	/* spins for icons */ 
+	.animate-spin:before {
+		@include animation( spin 2s infinite linear );
+		display: inline-block;
+	}
+
+
+	@include keyframes(spin) {
+
+	  0% {
+	    @include transform(rotate(0deg));
+	  }
+
+	  100% {
+	    @include transform(rotate(359deg));
+	  }
+
+	} 
+
+
+	@include keyframes(slideInUp) { 
+ 
+		from {
+			@include transform( translate3d(0, 100%, 0) );
+			visibility: visible;
+		}
+
+		to {
+			@include transform( translate3d(0, 0, 0) );
+		}
+	}
+ 
+ 	@include keyframes(slideOutUp) { 
+	  from {
+	  		@include transform( translate3d(0, 0, 0) );
+	  }
+
+	  to {
+	  		@include transform( translate3d(0, -100%, 0) );
+	    	visibility: hidden;
+	  }
+	}
+
+	.slideInUp {
+		@include animation-name(slideInUp);
+	}
+
+	.slideOutUp {
+		@include animation-name(slideOutUp);
+	}
